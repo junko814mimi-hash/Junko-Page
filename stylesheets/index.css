@@ -82,25 +82,56 @@ a {
   /*   First block End   */
 
   #second-block {
-    background-image: url("../images/second-dack.jpg");
+    /* background-image: url("../images/second-dack.jpg"); */
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
-  
-  .about-container {
+
+  .about-me-container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    width: 70%;
+    margin: 0 auto;
+
+    .about-me-container-image {
+      img {
+        border-radius: 15px;
+      }
+    }
+
+    .container-about-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .info-text {
+        margin-right: 20px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #ff8585;
+        padding: 10px;
+
+        > b {
+          font-weight: 600;
+          color: white;
+          text-shadow: 1px 1px black;
+        }
+      }
+    }
   }
   
   .info-title {
     font-size: 60px;
     font-family: serif;
-    margin-bottom: 20px;
-    color: #444;
+    margin-bottom: 100px;
     text-align: center;
+    border-bottom: 3px solid #ff8585;
+    padding: 10px;
   }
   
   .info-text {
@@ -115,13 +146,9 @@ a {
     font-size: 15px;
   }
   
-
-
-
   #third-block {
     background-color: #ffffff;
     text-align: center;
-    padding-top: 100px;
     padding-bottom: 100px;
   }
   
@@ -181,4 +208,4 @@ a {
 
 #bottom-block{
     background-color: #000;
-}
+} 
